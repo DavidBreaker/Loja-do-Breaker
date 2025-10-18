@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Breaker</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #302e2e;
+            color: white;
+        }
+        .navbar {
+            background-color: #005f9e;
+        }
+        .logo {
+            font-family: "Pirata One", cursive;
+            color: #00aaff;
+        }
+        .card {
+            background-color: #111;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #005f9e;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #007bbd;
+        }
+        .accordion-button {
+            background-color: #005f9e;
+            color: white;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #047ace;
+        }
+
+        .card {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .card-body {
+    background-color: #005f9e; 
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+    </style>
+    
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="row mt-3">
+        <div class="col-lg-8">
+            <h1 class="logo">Loja do Breaker <i class="bi bi-controller"></i></h1>
+        </div>
+        <div class="col-lg-4">
+            <form>
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Pesquisar...">
+                    <button class="btn btn-dark">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mt-3" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jogos">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Lojas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/jogos-de-ps2-de-sua-escolha-1390353176" target="_blank">OLX</a></li>
+                            <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=61574987511870" target="_blank">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div class="row mt-3">
+        <div class="col-lg-8">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Accordion -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Promoção da Semana
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Leve 5 jogos de sua escolha e pague 4!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Formas de Pagamento
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Aceitamos Somente Pix.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Frete
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Enviamos por Correios, Jadlog e OLX.
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            Jogos em Português!
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Aproveite alguns dos jogos totalmente traduzidos em português como God of War, Resident Evil 4 e Crash Twinsanity!
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+   <!-- Cards -->
+<div class="row my-4" id="jogos">
+    <!-- Card Sua Escolha -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalEscolha">
+            <img src="images/j1.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Sua Escolha</h5>
+                <p class="card-text">Monte seu kit personalizado com os jogos que você quiser.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Mortal Kombat -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalMK">
+            <img src="images/j2.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Mortal Kombat</h5>
+                <p class="card-text">Jogos clássicos e modernos da franquia Mortal Kombat.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Simpsons -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalSimpsons">
+            <img src="images/j3.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Simpsons</h5>
+                <p class="card-text">Jogos da famosa família amarela para PS2.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Lego -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalLego">
+            <img src="images/j4.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lego</h5>
+                <p class="card-text">Vários jogos da saga LEGO para você se divertir.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Ben 10 -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalBen10">
+            <img src="images/j5.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Ben 10</h5>
+                <p class="card-text">Encare aventuras incríveis com o Ben 10 no PS2.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Naruto -->
+    <div class="col-lg-4">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalNaruto">
+            <img src="images/j6.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Naruto</h5>
+                <p class="card-text">Os melhores jogos de luta e aventura do universo Naruto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Sua Escolha -->
+<div class="modal fade" id="modalEscolha" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Sua Escolha</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/48GymVzh9ck" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/jogos-de-ps2-de-sua-escolha-1390353176" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Mortal Kombat -->
+<div class="modal fade" id="modalMK" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Mortal Kombat</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/tKuoZsmbwCo" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/kit-jogos-mortal-kombat-para-ps2-1390358060" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Simpsons -->
+<div class="modal fade" id="modalSimpsons" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Simpsons</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/sdoWLquTu5w" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/kit-jogos-simpsons-para-ps2-1390360705" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Lego -->
+<div class="modal fade" id="modalLego" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Lego</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/KbaQUZPHYJc" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/acessorios-de-video-game/kit-jogos-lego-para-ps2-1390362199" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Ben 10 -->
+<div class="modal fade" id="modalBen10" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Ben 10</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/zRsjf8w-Tt4" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/kit-jogos-ben-10-para-ps2-1390356620" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Naruto -->
+<div class="modal fade" id="modalNaruto" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title">Naruto</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/41PL2p2BHhw" allowfullscreen></iframe>
+                </div>
+                <a href="https://df.olx.com.br/distrito-federal-e-regiao/games/jogos-de-video-game/kit-jogos-naruto-para-ps2-1390372532" class="btn btn-primary" target="_blank">Compre Agora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Sobre -->
+    <div id="sobre" class="my-5">
+        <h2>Sobre</h2>
+        <p>
+            A Loja do Breaker é uma loja especializada em vendas de jogos para PlayStatation 2,
+            onde você poderá encomendar jogos à sua preferência ou comprar conjuntos de jogos,
+            dentre eles kits de jogos de Mortal Kombat, Sonic, Simpsons, etc. 
+            Oferecemos serviço de entrega por Correios, Jadlog e OLX, sendo todos os jogos mídia física.
+        </p>
+    </div>
+
+    <!-- Contato -->
+    <div id="contato" class="my-5">
+        <h2>Contato</h2>
+        <p>Em caso de dúvidas ou queira encomendar jogos, mande um e-mail ou entre em contato pelo WhatsApp!</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Digite seu nome...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Insira seu e-mail...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" rows="4" placeholder="Escreva uma mensagem..."></textarea>
+                    </div>
+                    <button class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-whatsapp"></i> WhatsApp</h5>
+                        <p class="card-text">Clique abaixo para falar conosco!</p>
+                        <a id="whatsappBtn" href="#" class="btn btn-success">
+    <i class="bi bi-whatsapp"></i> (61) 98333-6446
+</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mensagem automática -->
+<script>
+document.getElementById("whatsappBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Mensagem que será enviada automaticamente
+    const mensagem = "Olá! Gostaria de fazer um pedido na Loja do Breaker 😄";
+
+    // Codifica o texto para ser usado na URL
+    const textoCodificado = encodeURIComponent(mensagem);
+
+    // Número do WhatsApp (sem espaços, parênteses ou traços)
+    const numero = "5561983336446";
+
+    // Monta o link completo do WhatsApp
+    const link = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+    // Abre o WhatsApp em nova aba
+    window.open(link, "_blank");
+});
+</script>
+
+<!-- Pesquisa -->
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const input = document.querySelector('input').value.toLowerCase();
+
+    const categorias = [
+        { nome: "mortal kombat", seletor: "Mortal Kombat" },
+        { nome: "simpsons", seletor: "Simpsons" },
+        { nome: "lego", seletor: "Lego" },
+        { nome: "ben 10", seletor: "Ben 10" },
+        { nome: "naruto", seletor: "Naruto" }
+    ];
+
+    let encontrou = false;
+
+    categorias.forEach(cat => {
+        if (input.includes(cat.nome)) {
+            const card = [...document.querySelectorAll('.card-title')].find(c => c.innerText === cat.seletor);
+            if (card) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                card.parentElement.parentElement.style.border = "3px solid #00aaff";
+                setTimeout(() => {
+                    card.parentElement.parentElement.style.border = "";
+                }, 2000);
+                encontrou = true;
+            }
+        }
+    });
+
+    if (!encontrou) {
+        const card = [...document.querySelectorAll('.card-title')].find(c => c.innerText === "Sua Escolha");
+        if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.parentElement.parentElement.style.border = "3px solid #00aaff";
+            setTimeout(() => {
+                card.parentElement.parentElement.style.border = "";
+            }, 2000);
+        }
+    }
+});
+</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
